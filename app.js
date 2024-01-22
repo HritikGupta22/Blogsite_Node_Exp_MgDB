@@ -7,8 +7,8 @@ const blogRoutes = require('./routes/blogRoutes');
 const app = express();
 
 //mongodb connection
-// const DBURL = "mongodb+srv://persondb:test1234@cluster0.nnoz5vy.mongodb.net/databaseofblogs?retryWrites=true&w=majority";
-mongoose.connect(process.env.DBURL,{serverSelectionTimeoutMS: 30000})
+const DBURL = "mongodb+srv://persondb:test1234@cluster0.nnoz5vy.mongodb.net/databaseofblogs?retryWrites=true&w=majority";
+mongoose.connect(DBURL,{serverSelectionTimeoutMS: 30000})
     .then((result)=>console.log('connected to db'))
     .catch((err)=>console.log(err));
 
