@@ -8,9 +8,21 @@ const app = express();
 
 //mongodb connection
 const DBURL = "mongodb+srv://persondb:test1234@cluster0.nnoz5vy.mongodb.net/databaseofblogs?retryWrites=true&w=majority";
-mongoose.connect(DBURL,{serverSelectionTimeoutMS: 30000})
-    .then((result)=>console.log('connected to db'))
-    .catch((err)=>console.log(err));
+// mongoose.connect(DBURL,{serverSelectionTimeoutMS: 30000})
+//     .then((result)=>console.log('connected to db'))
+//     .catch((err)=>console.log(err));
+async function connectToDatabase() {
+    try {
+        await mongoose.connect(DBURL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            serverSelectionTimeoutMS: 30000
+        });
+        console.log('Connected to the database');
+    } catch (err) {
+        console.error('Error connecting to the database:', err);
+    }
+}
 
 app.set('view engine','ejs');
 app.use(express.urlencoded({extended:true})); // for encoded data from form.
