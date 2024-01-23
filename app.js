@@ -23,6 +23,7 @@ async function connectToDatabase() {
         console.error('Error connecting to the database:', err);
     }
 }
+connectToDatabase();
 
 app.set('view engine','ejs');
 app.use(express.urlencoded({extended:true})); // for encoded data from form.
