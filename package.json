@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
   "start": "node app.js"
-}
+  },
+  "engines": {
+  "node": "14.x"
+  },
   "author": "hritik",
   "license": "ISC",
   "dependencies": {
