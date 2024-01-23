@@ -13,11 +13,7 @@ const DBURL = "mongodb+srv://persondb:test1234@cluster0.nnoz5vy.mongodb.net/data
 //     .catch((err)=>console.log(err));
 async function connectToDatabase() {
     try {
-        await mongoose.connect(DBURL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 30000
-        });
+        await mongoose.connect(DBURL, {serverSelectionTimeoutMS: 30000});
         console.log('Connected to the database');
     } catch (err) {
         console.error('Error connecting to the database:', err);
