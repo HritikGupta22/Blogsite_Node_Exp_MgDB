@@ -1,2 +1,2 @@
 ﻿# Blogsite_Node_Exp_MgDB
-https://blogsite-p956.onrender.com
+https://encouraging-jacket-tuna.cyclic.app/blogs
