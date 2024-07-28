@@ -7,14 +7,18 @@ body{
     margin: 20px auto;
     padding: 0 20px;
     font-family: 'Noto Serif', serif;
+     background: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-tablet_23-2148430857.jpg?w=900&t=st=1722162064~exp=1722162664~hmac=182bfefbbd0ed7b7a4b2eab7617b887c1af44571a622c6c0cf3eb1d1344f0487) no-repeat center center fixed;
+    background-size: cover;
     color: white;
-    background:linear-gradient(to right,skyblue,rgb(198, 19, 177),#1a6ccaf3) ;
+/*     background:linear-gradient(to right,skyblue,rgb(198, 19, 177),#1a6ccaf3) ; */
     height:auto;
 }
 p,h1,h2,h3,h4,a,ul{
     margin: 0;padding: 0;
     text-decoration: none;
-    color: #171212;
+        color: white;
+
+/*     color: #171212; */
 
 }
 nav{
@@ -38,9 +42,15 @@ nav li{
 nav h1{
     font-size: 3rem;
 }
-nav p,nav a{
-    color: #382b2b;
+nav p,nav li a{
+/*     color: #382b2b; */
+     color: white; /* Text color */
+    background-color: rgba(49, 49, 49, 0.5);
     font-weight: 300;
+}
+.about{
+    color: white;
+    background-color:  rgba(49, 49, 49, 0.377);
 }
 .about p{
     margin-top: 5px;
@@ -57,7 +67,8 @@ nav p,nav a{
 
 }
 footer{
-    color: #777;
+/*     color: #777; */
+     color: white;
     text-align: center;
     margin: 80px auto 10px;
 
@@ -98,6 +109,7 @@ h3{
     border-radius: 30%;
     padding: 8px;
     color: rgb(0, 0, 0);
+      background-color: rgba(114, 109, 109, 0.5);
     transition: .5s ease;
 }
 .delete:hover{
